@@ -1,0 +1,29 @@
+.log_img {
+    width: 100%;
+    height: calc(100vh - 2 * 0rem) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.digtal {
+    color: #3B3B6B;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.subHeading {
+    letter-spacing: 2px;
+    color: #D41317;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1369px) {
+    .log_img {
+     display: none;
+    }
+  }
+
+  

@@ -1,0 +1,36 @@
+<div class="mt-4">
+    <p style="color:#838383;" class="mb-4 loginText">LOG IN</p>
+    <form [formGroup]="formGroup" (ngSubmit)="submit()">
+        <div>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Username" formControlName="username">
+                <mat-error *ngIf="formGroup.get('username')?.invalid && (formGroup.get('username')?.touched || submitted)">
+                    Please provide a valid username.
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <input type="password" matInput placeholder="Password" formControlName="password">
+                <mat-error *ngIf="formGroup.get('password')?.invalid && (formGroup.get('password')?.touched || submitted)">
+                    Please provide a valid password.
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <div class="">
+                <div class="d-flex justify-content-between w-100">
+                    <div class="">
+                        <mat-slide-toggle formControlName="rememberMe">Remember Me</mat-slide-toggle>
+                    </div>
+                    <div class="forgot">
+                        <p  (click)="navigate()">Forgot Password?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <button type="submit" mat-button class="orange-button button">Login</button>
+        </div>
+    </form>
+</div>

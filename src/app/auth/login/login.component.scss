@@ -1,0 +1,49 @@
+mat-form-field {
+  width: 350px;
+  height: 70px;
+  color: #f1f0f0;
+  // opacity: 0.3;
+}
+
+.button {
+  background: linear-gradient(to right, #F29531 0%, #E8574B 100%);
+  width: 60%;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  color: white !important;
+  border: none;
+  font-weight: bold;
+
+}
+
+::ng-deep {
+  .mdc-switch.mdc-switch--selected:enabled .mdc-switch__icon {
+    display: none;
+  }
+
+  .mdc-switch:enabled .mdc-switch__track::after {
+    background: #D41317 !important;
+  }
+
+  .mat-mdc-slide-toggle.mat-accent {
+    --mdc-switch-selected-handle-color: #D41317 !important;
+  }
+
+  .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__icon {
+    display: none;
+  }
+
+}
+
+.loginText {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.forgot {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
