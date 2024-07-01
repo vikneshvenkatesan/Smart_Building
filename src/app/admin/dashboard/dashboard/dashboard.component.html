@@ -1,0 +1,271 @@
+<div class="home">
+    <google-map height="500px"
+    width="100%"
+    [center]="center"
+    [zoom]="zoom"
+    (mapClick)="moveMap($event)"
+    (mapMousemove)="move($event)">
+</google-map>
+</div>
+<div class="container mt-5">
+    <div class="row" style="gap: 40px;">
+        <div class="col-md-2 col-sm-">
+            <mat-form-field>
+                <mat-label>Country</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let country of countrys; trackBy: trackByFn" [value]="country.value">
+                        {{country.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-2 col-sm-">
+            <mat-form-field>
+                <mat-label>ZipCode</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let country of countrys; trackBy: trackByFn" [value]="country.value">
+                        {{country.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-2 col-sm-">
+            <mat-form-field>
+                <mat-label>City</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let country of countrys; trackBy: trackByFn" [value]="country.value">
+                        {{country.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-2 col-sm-">
+            <mat-form-field>
+                <mat-label>Client</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let country of countrys; trackBy: trackByFn" [value]="country.value">
+                        {{country.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-md-2 col-sm-">
+            <button class="button-board">Search</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="row m-0">
+        <div class="col-xl-11 d-flex gap-2 mx-auto overflow-auto w-100">
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="algn">
+                <div id="logocard">
+                    <div id="upper-bg">
+                        <img src="../../../../assets/Rectangle 319.png" alt="profile-pic" class="profile-pic">
+                    </div>
+                    <div id="lower-bg">
+                        <div class="text-center h-100 d-flex flex-column justify-content-center">
+                            <span class="title">Building A</span>
+                            <span class="text">Street: 55 Route De Lyon</span>
+                            <span class="text">City: Ivry-Sur-Seine</span>
+                            <span class="text">Area: Île-De-France</span>
+                            <span class="text">Zip Code: 94200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

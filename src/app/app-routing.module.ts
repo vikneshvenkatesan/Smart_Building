@@ -5,16 +5,16 @@ import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.
 const routes: Routes = [
   {
 
-    path:'',
-    redirectTo:'auth',
-    pathMatch:'full'
+    path: '',
+    redirectTo: 'auth',
+    pathMatch: 'full'
   },
 
   {
     path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'dashboard', loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
+    path: 'dashboard', loadChildren: () => import('./admin/dashboard/dashboard.module').then(m => m.DashboardModule)
   }
 ];
 

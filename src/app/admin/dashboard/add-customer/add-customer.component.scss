@@ -1,0 +1,32 @@
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.add{
+  background: linear-gradient(to right, #F29531 0%, #E8574B 100%) !important;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.btn{
+  background: linear-gradient(to right, #F29531 0%, #E8574B 100%) ;
+  color: white;
+}
+
+.btn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.fcustomer{
+  padding: 20px;
+}

@@ -1,5 +1,5 @@
 <div class="row m-0">
-    <nav class="navbar navbar-expand-lg navbar-dark px-0 py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="col-xl-12 mx-auto">
             <div class="row m-0">
                 <div class="col-xl-2 head-1 justify-content-center">
@@ -8,30 +8,33 @@
                     <p class="subHeading">Impulse - leverage - Unclock</p>
                 </div>
                 <div class="col-xl-2 d-flex align-items-center">
-                    <img class="" src='../../../assets/Vector.png' alt='image'><span
-                        style="color: #D41317; margin-left: 5px;">SMART
+                    <img class="" src='../../../assets/Vector.png' alt='image' style="width: 21px;"><span class="build"
+                        style="color: #D41317;">SMART
                         BUILDING METAPLATFORM</span>
                 </div>
                 <div class="col-xl-1 d-flex align-items-center flex-column justify-content-center">
                     <img class="" src='../../../assets/icons8-dashboard-layout-24.png' alt='image'>
-                    <p class="m-0">DASHBOARD</p>
+                    <p class="dashboard m-0" [routerLinkActive]="'active'" [ngClass]="{'active': isActive}"
+                        style="font-size: 14px;">
+                        DASHBOARD
+                    </p>
                 </div>
                 <div class="col-xl-1 d-flex align-items-center flex-column justify-content-center">
                     <img class="" src='../../../assets/Vector (1).png' alt='image'>
-                    <p class="m-0">COSTOMER</p>
+                    <p class="m-0" style="font-size: 14px;">CUSTOMER</p>
                 </div>
                 <div class="col-xl-1 d-flex align-items-center flex-column justify-content-center">
                     <img class="" src='../../../assets/ic_baseline-apartment.png' alt='image'>
-                    <p class="m-0">BUILDING</p>
+                    <p class="m-0" style="font-size: 14px;">BUILDING</p>
                 </div>
                 <div class="col-xl-1 d-flex align-items-center flex-column justify-content-center">
                     <img class="" src='../../../assets/Vector (2).png' alt='image'>
-                    <p class="m-0">USER</p>
+                    <p class="m-0" style="font-size: 14px;">USER</p>
                 </div>
                 <div class="col-xl-2 d-flex align-items-center">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </div>
-                <div class="col-xl-2 d-flex align-items-center gap-3">
+                <div class="align-items-center col-xl-2 d-flex gap-3 justify-content-center">
                     <img class="" src='../../../assets/Group 48.png' alt='image'>
                     <img class="" src='../../../assets/Ellipse 17.png' alt='image'>
                     <div>
